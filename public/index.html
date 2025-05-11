@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações Push</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Notificações Push</h1>
+            <p>Receba notificações mesmo com o navegador fechado</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>Ativar Notificações</h2>
+                <p>Clique no botão abaixo para permitir notificações deste site.</p>
+                <button id="enableNotifBtn" class="btn">Ativar Notificações</button>
+                <div id="status" class="status"></div>
+            </div>
+
+            <div class="card">
+                <h2>Como funciona?</h2>
+                <p>1. Clique em "Ativar Notificações"</p>
+                <p>2. Permita as notificações no pop-up do navegador</p>
+                <p>3. Você receberá notificações mesmo offline</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2023 Notificações Push App</p>
+        </footer>
+    </div>
+
+    <script src="/js/client.js"></script>
+</body>
+
+</html>

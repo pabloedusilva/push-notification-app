@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container dashboard">
+        <header>
+            <h1>Painel de Controle</h1>
+            <p>Envie notificações push para seus usuários</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>Nova Notificação</h2>
+                <form id="notificationForm">
+                    <div class="form-group">
+                        <label for="title">Título*</label>
+                        <input type="text" id="title" required placeholder="Título da notificação">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="body">Mensagem*</label>
+                        <textarea id="body" required placeholder="Conteúdo da notificação"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="url">URL de Redirecionamento</label>
+                        <input type="url" id="url" placeholder="https://seusite.com/pagina">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">URL da Imagem (opcional)</label>
+                        <input type="url" id="image" placeholder="https://seusite.com/imagem.jpg">
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Notificação</button>
+                </form>
+            </div>
+
+            <div id="result" class="result"></div>
+
+            <div class="card stats">
+                <h2>Estatísticas</h2>
+                <p>Dispositivos inscritos: <span id="subscribersCount">0</span></p>
+                <button id="refreshBtn" class="btn secondary">Atualizar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>

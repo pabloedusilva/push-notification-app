@@ -1,0 +1,14 @@
+{
+    "name": "push-notification-app",
+    "version": "1.0.0",
+    "description": "Aplicação completa de notificações push",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "express": "^4.21.2",
+        "web-push": "^3.6.7"
+    }
+}
